@@ -24,12 +24,12 @@ body{
 }
 
 .ice{
-    width: 55px;
-    height: 105px;
-    background: url(wave-of-ice.png);
+    width: 79px;
+    height: 108px;
+    background: url(Sprite.png);
     animation-name: wave;
     animation-duration: 1s;
-    animation-timing-function: steps(3, start);
+    animation-timing-function: steps(4, end);
     animation-iteration-count: infinite;
 }
 
@@ -38,7 +38,7 @@ body{
         background-position: 0px 0px;
     }
     to {
-        background-position: -11px 0px;
+        background-position: -398px 6px;
     }
 }
 
@@ -68,13 +68,13 @@ body{
 
 
 .death{
-    width: 55px;
-    height: 105px;
+    width: 123px;
+    height: 125px;
     background: url(death.png);
     animation-name: death;
     animation-delay: 0.7s;
     animation-duration: 1.2s;
-    animation-timing-function: steps(10, start);
+    animation-timing-function: steps(6, start);
     animation-iteration-count: infinite;
 }
 
@@ -83,7 +83,7 @@ body{
         background-position: 0px 0px;
     }
     to {
-        background-position: -633px 0px;
+        background-position: -1035px 0px;
     }
 }
 
@@ -91,4 +91,33 @@ body{
     position: absolute;
     left: 700px;
     bottom: 100px;
+}
+
+.container4{
+    position: absolute;
+    left: 250px;
+    bottom: 100px;
+}
+.container5{
+    position: absolute;
+    right: 250px;
+    bottom: 100px;
+}
+.support{
+    width: 89px;
+    height: 180px;
+    background: url(Support.png);
+    animation-name: sup;
+    animation-timing-function: steps(3);
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes sup {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: -570px 0px;
+    }
 }
